@@ -1,5 +1,4 @@
 language: r
-cache: packages
 pandoc_version: 1.19.2.1
 
 before_script:
@@ -8,9 +7,4 @@ before_script:
 
 script:
   - ./_build.sh
-  - ./_deploy.sh
-  
-deploy:
-  provider: pages:git
-  token: $GITHUB_TOKEN 
-  edge: true # opt in to dpl v2
+  - ./_deploy.sh 
