@@ -3,16 +3,13 @@ title: "A First Course In Statistics"
 author: "Andrea Mascaretti"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
-output:
-  bookdown::gitbook:
-    lib_dir: "book_assets"
-  bookdown::pdf_book:
-    keep_tex: yes
+output: bookdown::gitbook
+output_dir: docs
 documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-github-repo: mascaretti/moxier
+github-repo: mascaretti/moxier-companion
 description: "This is a book with the instructions to effectively run the notebooks."
 ---
 
