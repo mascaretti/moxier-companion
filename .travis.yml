@@ -12,5 +12,5 @@ script:
   
 deploy:
   provider: pages:git
-  token: <encrypted token>
+  token: $GITHUB_TOKEN 
   edge: true # opt in to dpl v2
