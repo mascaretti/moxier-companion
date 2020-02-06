@@ -130,54 +130,87 @@
 }
 \chapter{Prerequisites}\label{prerequisites}
 
-\textbf{UNDER CONSTRUCTION!}
-
 Welcome to this introductory course in statistics with R! This book will
 help you get started and will guide you through the material of the
 course.
 
-The material of this course is based on the
-\href{https://github.com/mascaretti/moxier}{moxier} package. It consists
-of a series of \href{https://rstudio.github.io/learnr/}{learnr}
-notebooks that will guide through your first steps into the wonderful
-world of statistics and statistical computing!
+The material of this course is based on the \textbf{moxier} package. It
+consists of a series of \textbf{learnr} notebooks, \citep{R-learnr},
+that will guide through your first steps into the wonderful world of
+statistics and statistical computing!
 
-\section{Installing the package}\label{installing-the-package}
+\section{Getting started}\label{getting-started}
 
-\subsection{\texorpdfstring{Install the \textbf{remote}
-package}{Install the remote package}}\label{install-the-remote-package}
+Whilst we will dedicate Chapter \ref{intro} to the topic of software
+installation, we here introduce the main tools we will use throughout
+this course: \textbf{R} and \textbf{RStudio}.
 
-To install \textbf{moxier}, first of all you need to download the
-\textbf{remotes} package. To do so, simply type into your console
+\subsection{R}\label{r}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\ControlFlowTok{if}\NormalTok{ (}\OperatorTok{!}\KeywordTok{requireNamespace}\NormalTok{(}\StringTok{"remotes"}\NormalTok{, }\DataTypeTok{quietly =} \OtherTok{TRUE}\NormalTok{))}
-    \KeywordTok{install.packages}\NormalTok{(}\StringTok{"remotes"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+So, what do we talk about when we talk about R? According to the
+\href{https://www.r-project.org/about.html}{R project} website, R is a
+software environment that includes:
 
-\subsection{\texorpdfstring{Install
-\textbf{moxier}}{Install moxier}}\label{install-moxier}
+\begin{quote}
+\begin{itemize}
+\tightlist
+\item
+  an effective data handling and storage facility,
+\item
+  a suite of operators for calculations on arrays, in particular
+  matrices,
+\item
+  a large, coherent, integrated collection of intermediate tools for
+  data analysis,
+\item
+  graphical facilities for data analysis and display either on-screen or
+  on hardcopy, and
+\item
+  a well-developed, simple and effective programming language which
+  includes conditionals, loops, user-defined recursive functions and
+  input and output facilities.
+\end{itemize}
+\end{quote}
 
-You are now ready to install \textbf{moxier}! Type into your console
+Quite a number of things! We will use this set of tools to dive deep
+into the principles of statistics and statistical computation.
 
-\begin{verbatim}
-remotes::install_github("mascaretti/moxier")
-\end{verbatim}
+Another thing that is worth noticing is that \textbf{R} is Free
+Software. It means anybody can contribute to its development. Common
+tools have emerged to solve problems. \textbf{R} can be extended with
+such tools, which are called \emph{packages} in R parlance, to do all
+sort of incredible things. Packages are usually stored on CRAN, the
+Comprehensive R Archive Network, and they range from packages to
+\href{https://rich-iannone.github.io/blastula/}{send emails} to
+\href{https://cran.r-project.org/web/views/MachineLearning.html}{machine
+learning}.
 
-Voilà! You are good to go!
+\subsection{RStudio}\label{rstudio}
+
+\href{https://rstudio.com/}{\textbf{RStudio}} is an \textbf{R} IDE
+(Integrated Development Environment). But what does it mean? Basically,
+it is a set of software that helps you be more productive: it allows you
+to quickly manage files, see what variables you have defined and a vast
+number of other things. This book and the \textbf{moxier} package have
+been developed from within \textbf{RStudio}. We will see in a minute how
+to install it!
 
 \section{Some useful links}\label{some-useful-links}
 
-You can browse the source code at
-\url{https://github.com/mascaretti/moxier}. If you need to report a bug,
-do it at \url{https://github.com/mascaretti/moxier/issues}.
+If you are interesting in learning more about \textbf{R} as a
+programming language, you can find many resources on the Internet. Some
+nice books are \textbf{Hands-On Programming with R},
+\citep{grolemund2014} to get started and \textbf{Advanced R}
+\citep{wickham2019} to dive deep into the features of the language.
 
 \section{Licence}\label{licence}
 
 The \textbf{moxier} package is subject to the
-\href{https://www.r-project.org/Licenses/GPL-3}{GPL-3} licence.
+\href{https://www.r-project.org/Licenses/GPL-3}{GPL-3} licence. For more
+information, visit \url{https://mascaretti.github.io/moxier/}.
+
+This book is licensed under a Creative Commons
+Attribution-NonCommercial-ShareAlike 4.0 International License.
 
 \chapter{Introduction}\label{intro}
 
