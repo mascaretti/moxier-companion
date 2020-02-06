@@ -273,27 +273,193 @@ Once the installation is complete, you can install \textbf{moxier}
 \end{Highlighting}
 \end{Shaded}
 
+\section{\texorpdfstring{Using
+\textbf{moxier}}{Using moxier}}\label{using-moxier}
+
+We are now interested in using \textbf{moxier}. What is inside it? To
+find out, we list the tutorials contained in the package.
+
+\begin{tabular}{l|l}
+\hline
+Name & Title\\
+\hline
+00-introduction-installing-r & R and RStudio\\
+\hline
+01-introduction-programming-r & Programming in R\\
+\hline
+02-data-visualisation-graphics & Graphics in Base R\\
+\hline
+03-data-visualisation-ggplot2 & Introduction to ggplot\\
+\hline
+04-descriptive-statistics-univariate & Univariate Descriptive\\
+\hline
+05-descriptive-statistics-depth-measures & Depth Measures\\
+\hline
+06-descriptive-statistics-multivariate & Univariate Descriptive\\
+\hline
+07-descriptive-statistics-curse-dimensionality & Univariate Descriptive\\
+\hline
+08-dimensionality-reduction-pca & PCA: Example 1\\
+\hline
+09-dimensionality-reduction-pca & PCA: Example 2\\
+\hline
+10-dimensionality-reduction-pca & PCA: Exercise 1\\
+\hline
+11-hypotheses-test-anova & HT and ANOVA: Exercise 1\\
+\hline
+12-hypotheses-test-anova & HT and ANOVA: Exercise 2\\
+\hline
+13-linear-regression & Regression: Exercise 1\\
+\hline
+14-linear-regression & Regression: Exercise 1\\
+\hline
+15-classification & Classification - Cytokine\\
+\hline
+16-classification & Classification - Human Data\\
+\hline
+17-clustering & Clustering - 00\\
+\hline
+18-clustering & Clustering - Iris\\
+\hline
+19-clustering & Clustering - Earthquakes\\
+\hline
+20-extra-dplyr-intro & dplyr: An Introduction\\
+\hline
+\end{tabular}
+
+Now, let us imagine you wish to run the tutorial on how to install
+\textbf{R}.
+
+Simply run
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{learnr}\OperatorTok{::}\KeywordTok{run_tutorial}\NormalTok{(}\DataTypeTok{name =} \StringTok{"00-introduction-installing-r"}\NormalTok{, }\DataTypeTok{package =} \StringTok{"moxier"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+Quite smooth, right? Of course, put the title you are interested in to
+run the respective tutorial. To see the full list,
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{learnr}\OperatorTok{::}\KeywordTok{available_tutorials}\NormalTok{(}\DataTypeTok{package =} \StringTok{"moxier"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
 Voilà! You are ready to start learning!
 
-\chapter{Literature}\label{literature}
+\chapter{Introduction to programming in
+R}\label{introduction-to-programming-in-r}
 
-Here is a review of existing methods.
+This tutorial will introduce you to programming in \textbf{R}. Run it by
+doing
 
-\chapter{Methods}\label{methods}
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{learnr}\OperatorTok{::}\KeywordTok{run_tutorial}\NormalTok{(}\DataTypeTok{name =} \StringTok{"01-introduction-programming-r"}\NormalTok{,}
+                     \DataTypeTok{package =} \StringTok{"moxier"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
 
-We describe our methods in this chapter.
+\chapter{Data Visualisation}\label{data-visualisation}
 
-\chapter{Applications}\label{applications}
+In this part of the course, we will dive deep into data visualisation.
+We will start using base \textbf{R} and then explore the package
+\textbf{ggplot2}, \citep{R-ggplot2}.
 
-Some \emph{significant} applications are demonstrated in this chapter.
+\section{\texorpdfstring{Base \textbf{R}}{Base R}}\label{base-r}
 
-\section{Example one}\label{example-one}
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{learnr}\OperatorTok{::}\KeywordTok{run_tutorial}\NormalTok{(}\DataTypeTok{name =} \StringTok{"02-data-visualisation-graphics"}\NormalTok{,}
+                     \DataTypeTok{package =} \StringTok{"moxier"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
 
-\section{Example two}\label{example-two}
+\section{\texorpdfstring{\textbf{ggplot2}}{ggplot2}}\label{ggplot2}
 
-\chapter{Final Words}\label{final-words}
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{learnr}\OperatorTok{::}\KeywordTok{run_tutorial}\NormalTok{(}\DataTypeTok{name =} \StringTok{"03-data-visualisation-ggplot2"}\NormalTok{,}
+                     \DataTypeTok{package =} \StringTok{"moxier"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
 
-We have finished a nice book.
+\chapter{Descriptive Statistics}\label{descriptive-statistics}
+
+We now turn our attention to descriptive statistics.
+
+\section{Univariate Statistics}\label{univariate-statistics}
+
+\subsection{Descriptive Univariate}\label{descriptive-univariate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{learnr}\OperatorTok{::}\KeywordTok{run_tutorial}\NormalTok{(}\DataTypeTok{name =} \StringTok{"04-descriptive-statistics-univariate"}\NormalTok{,}
+                     \DataTypeTok{package =} \StringTok{"moxier"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{Depth Measures}\label{depth-measures}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{learnr}\OperatorTok{::}\KeywordTok{run_tutorial}\NormalTok{(}\DataTypeTok{name =} \StringTok{"05-descriptive-statistics-depth-measures"}\NormalTok{,}
+                     \DataTypeTok{package =} \StringTok{"moxier"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\section{Multiavriate Statistics}\label{multiavriate-statistics}
+
+\subsection{Descriptive Multivariate}\label{descriptive-multivariate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{learnr}\OperatorTok{::}\KeywordTok{run_tutorial}\NormalTok{(}\DataTypeTok{name =} \StringTok{"06-descriptive-statistics-multivariate"}\NormalTok{,}
+                     \DataTypeTok{package =} \StringTok{"moxier"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{Curse of Dimensionality}\label{curse-of-dimensionality}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{learnr}\OperatorTok{::}\KeywordTok{run_tutorial}\NormalTok{(}\DataTypeTok{name =} \StringTok{"07-descriptive-statistics-curse-dimensionality"}\NormalTok{,}
+                     \DataTypeTok{package =} \StringTok{"moxier"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\chapter{Dimensionality Reduction}\label{dimensionality-reduction}
+
+We will study Principal Component Analysis.
+
+\section{Example 1}\label{example-1}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{learnr}\OperatorTok{::}\KeywordTok{run_tutorial}\NormalTok{(}\DataTypeTok{name =} \StringTok{"08-dimensionality-reduction-pca"}\NormalTok{,}
+                     \DataTypeTok{package =} \StringTok{"moxier"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\section{Example 2}\label{example-2}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{learnr}\OperatorTok{::}\KeywordTok{run_tutorial}\NormalTok{(}\DataTypeTok{name =} \StringTok{"09-dimensionality-reduction-pca"}\NormalTok{,}
+                     \DataTypeTok{package =} \StringTok{"moxier"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\section{Exercise 1}\label{exercise-1}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{learnr}\OperatorTok{::}\KeywordTok{run_tutorial}\NormalTok{(}\DataTypeTok{name =} \StringTok{"10-dimensionality-reduction-pca"}\NormalTok{,}
+                     \DataTypeTok{package =} \StringTok{"moxier"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
 
 \bibliography{book.bib,packages.bib}
 

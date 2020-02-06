@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2 Introduction | A First Course In Statistics</title>
+  <title>Chapter 5 Descriptive Statistics | A First Course In Statistics</title>
   <meta name="description" content="This is a book with the instructions to effectively run the notebooks." />
   <meta name="generator" content="bookdown 0.17.2 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 Introduction | A First Course In Statistics" />
+  <meta property="og:title" content="Chapter 5 Descriptive Statistics | A First Course In Statistics" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="mascaretti/moxier-companion" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 Introduction | A First Course In Statistics" />
+  <meta name="twitter:title" content="Chapter 5 Descriptive Statistics | A First Course In Statistics" />
   
   <meta name="twitter:description" content="This is a book with the instructions to effectively run the notebooks." />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="introduction-to-programming-in-r.html"/>
+<link rel="prev" href="data-visualisation.html"/>
+<link rel="next" href="dimensionality-reduction.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -162,159 +162,35 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="intro" class="section level1">
-<h1><span class="header-section-number">Chapter 2</span> Introduction</h1>
-<p>We are now going to install the tools we need. We will start from <strong>R</strong>, to then move to <strong>RStudio</strong> and, finally, the packages we are going to need.</p>
-<div id="installing-r" class="section level2">
-<h2><span class="header-section-number">2.1</span> Installing R</h2>
-<p>Installing <strong>R</strong> has never been easier! You can simply follow the instructions you find in the video.</p>
-<div style="padding:62.5% 0 0 0;position:relative;">
-<iframe src="https://player.vimeo.com/video/203516510?color=428bca&amp;title=0&amp;byline=0&amp;portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
-</iframe>
+<div id="descriptive-statistics" class="section level1">
+<h1><span class="header-section-number">Chapter 5</span> Descriptive Statistics</h1>
+<p>We now turn our attention to descriptive statistics.</p>
+<div id="univariate-statistics" class="section level2">
+<h2><span class="header-section-number">5.1</span> Univariate Statistics</h2>
+<div id="descriptive-univariate" class="section level3">
+<h3><span class="header-section-number">5.1.1</span> Descriptive Univariate</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">learnr<span class="op">::</span><span class="kw">run_tutorial</span>(<span class="dt">name =</span> <span class="st">&quot;04-descriptive-statistics-univariate&quot;</span>,
+                     <span class="dt">package =</span> <span class="st">&quot;moxier&quot;</span>)</code></pre></div>
 </div>
-<script src="https://player.vimeo.com/api/player.js"></script>
-<p>
-<a href="https://vimeo.com/203516510">install-R</a> from <a href="https://vimeo.com/rstudioinc">RStudio, Inc.</a> on <a href="https://vimeo.com">Vimeo</a>.
-</p>
-<p>An alternative is Microsoft R Open, which can be downloaded <a href="https://mran.microsoft.com/">here</a>. It lags behind the current <strong>R</strong> version, but it comes with better performance tweaks included.</p>
+<div id="depth-measures" class="section level3">
+<h3><span class="header-section-number">5.1.2</span> Depth Measures</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">learnr<span class="op">::</span><span class="kw">run_tutorial</span>(<span class="dt">name =</span> <span class="st">&quot;05-descriptive-statistics-depth-measures&quot;</span>,
+                     <span class="dt">package =</span> <span class="st">&quot;moxier&quot;</span>)</code></pre></div>
 </div>
-<div id="installing-rstudio" class="section level2">
-<h2><span class="header-section-number">2.2</span> Installing RStudio</h2>
-<p>Once you have got <strong>R</strong> installing, simply follow this other video.</p>
-<div style="padding:62.5% 0 0 0;position:relative;">
-<iframe src="https://player.vimeo.com/video/203516968?color=428bca&amp;title=0&amp;byline=0&amp;portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
-</iframe>
 </div>
-<script src="https://player.vimeo.com/api/player.js"></script>
-<p>
-<a href="https://vimeo.com/203516968">Install RStudio</a> from <a href="https://vimeo.com/rstudioinc">RStudio, Inc.</a> on <a href="https://vimeo.com">Vimeo</a>.
-</p>
+<div id="multiavriate-statistics" class="section level2">
+<h2><span class="header-section-number">5.2</span> Multiavriate Statistics</h2>
+<div id="descriptive-multivariate" class="section level3">
+<h3><span class="header-section-number">5.2.1</span> Descriptive Multivariate</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">learnr<span class="op">::</span><span class="kw">run_tutorial</span>(<span class="dt">name =</span> <span class="st">&quot;06-descriptive-statistics-multivariate&quot;</span>,
+                     <span class="dt">package =</span> <span class="st">&quot;moxier&quot;</span>)</code></pre></div>
 </div>
-<div id="installing-packages" class="section level2">
-<h2><span class="header-section-number">2.3</span> Installing packages</h2>
-<p>We now cover the installation of packages. Packages extend the amount of things you can do with <strong>R</strong>, from plotting to data analysis. We will be using the <strong>moxier</strong> package through this course, for instance.</p>
-<p>To quickly get up to speed as to how install packages, again, simply follow the video. Just, for the time being, skip the <strong>tidyverse</strong> installation.</p>
-<div style="padding:62.5% 0 0 0;position:relative;">
-<iframe src="https://player.vimeo.com/video/203516241?color=428bca&amp;title=0&amp;byline=0&amp;portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
-</iframe>
-</div>
-<script src="https://player.vimeo.com/api/player.js"></script>
-<p>
-<a href="https://vimeo.com/203516241">install Packages</a> from <a href="https://vimeo.com/rstudioinc">RStudio, Inc.</a> on <a href="https://vimeo.com">Vimeo</a>.
-</p>
-</div>
-<div id="installing-moxier" class="section level2">
-<h2><span class="header-section-number">2.4</span> Installing <strong>moxier</strong></h2>
-<p>We are now ready to install <strong>moxier</strong>! First, we need to install an auxiliary package, the <strong>remotes</strong> package. This package allows to install other packages from GitHub. GitHub is a place where many people develop and publish open-source software.</p>
-<p>To install <strong>remotes</strong>, simply type in your console</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="st">&quot;remotes&quot;</span>)</code></pre></div>
-<p>Once the installation is complete, you can install <strong>moxier</strong></p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">remotes<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;mascaretti/moxier&quot;</span>)</code></pre></div>
-</div>
-<div id="using-moxier" class="section level2">
-<h2><span class="header-section-number">2.5</span> Using <strong>moxier</strong></h2>
-<p>We are now interested in using <strong>moxier</strong>. What is inside it? To find out, we list the tutorials contained in the package.</p>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Name</th>
-<th align="left">Title</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">00-introduction-installing-r</td>
-<td align="left">R and RStudio</td>
-</tr>
-<tr class="even">
-<td align="left">01-introduction-programming-r</td>
-<td align="left">Programming in R</td>
-</tr>
-<tr class="odd">
-<td align="left">02-data-visualisation-graphics</td>
-<td align="left">Graphics in Base R</td>
-</tr>
-<tr class="even">
-<td align="left">03-data-visualisation-ggplot2</td>
-<td align="left">Introduction to ggplot</td>
-</tr>
-<tr class="odd">
-<td align="left">04-descriptive-statistics-univariate</td>
-<td align="left">Univariate Descriptive</td>
-</tr>
-<tr class="even">
-<td align="left">05-descriptive-statistics-depth-measures</td>
-<td align="left">Depth Measures</td>
-</tr>
-<tr class="odd">
-<td align="left">06-descriptive-statistics-multivariate</td>
-<td align="left">Univariate Descriptive</td>
-</tr>
-<tr class="even">
-<td align="left">07-descriptive-statistics-curse-dimensionality</td>
-<td align="left">Univariate Descriptive</td>
-</tr>
-<tr class="odd">
-<td align="left">08-dimensionality-reduction-pca</td>
-<td align="left">PCA: Example 1</td>
-</tr>
-<tr class="even">
-<td align="left">09-dimensionality-reduction-pca</td>
-<td align="left">PCA: Example 2</td>
-</tr>
-<tr class="odd">
-<td align="left">10-dimensionality-reduction-pca</td>
-<td align="left">PCA: Exercise 1</td>
-</tr>
-<tr class="even">
-<td align="left">11-hypotheses-test-anova</td>
-<td align="left">HT and ANOVA: Exercise 1</td>
-</tr>
-<tr class="odd">
-<td align="left">12-hypotheses-test-anova</td>
-<td align="left">HT and ANOVA: Exercise 2</td>
-</tr>
-<tr class="even">
-<td align="left">13-linear-regression</td>
-<td align="left">Regression: Exercise 1</td>
-</tr>
-<tr class="odd">
-<td align="left">14-linear-regression</td>
-<td align="left">Regression: Exercise 1</td>
-</tr>
-<tr class="even">
-<td align="left">15-classification</td>
-<td align="left">Classification - Cytokine</td>
-</tr>
-<tr class="odd">
-<td align="left">16-classification</td>
-<td align="left">Classification - Human Data</td>
-</tr>
-<tr class="even">
-<td align="left">17-clustering</td>
-<td align="left">Clustering - 00</td>
-</tr>
-<tr class="odd">
-<td align="left">18-clustering</td>
-<td align="left">Clustering - Iris</td>
-</tr>
-<tr class="even">
-<td align="left">19-clustering</td>
-<td align="left">Clustering - Earthquakes</td>
-</tr>
-<tr class="odd">
-<td align="left">20-extra-dplyr-intro</td>
-<td align="left">dplyr: An Introduction</td>
-</tr>
-</tbody>
-</table>
-<p>Now, let us imagine you wish to run the tutorial on how to install <strong>R</strong>.</p>
-<p>Simply run</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">learnr<span class="op">::</span><span class="kw">run_tutorial</span>(<span class="dt">name =</span> <span class="st">&quot;00-introduction-installing-r&quot;</span>, <span class="dt">package =</span> <span class="st">&quot;moxier&quot;</span>)</code></pre></div>
-<p>Quite smooth, right? Of course, put the title you are interested in to run the respective tutorial. To see the full list,</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">learnr<span class="op">::</span><span class="kw">available_tutorials</span>(<span class="dt">package =</span> <span class="st">&quot;moxier&quot;</span>)</code></pre></div>
-<p>Voilà! You are ready to start learning!</p>
+<div id="curse-of-dimensionality" class="section level3">
+<h3><span class="header-section-number">5.2.2</span> Curse of Dimensionality</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">learnr<span class="op">::</span><span class="kw">run_tutorial</span>(<span class="dt">name =</span> <span class="st">&quot;07-descriptive-statistics-curse-dimensionality&quot;</span>,
+                     <span class="dt">package =</span> <span class="st">&quot;moxier&quot;</span>)</code></pre></div>
 
+</div>
 </div>
 </div>
             </section>
@@ -322,8 +198,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="introduction-to-programming-in-r.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="data-visualisation.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="dimensionality-reduction.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -354,7 +230,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/mascaretti/moxier-companion/edit/master/01-intro.Rmd",
+"link": "https://github.com/mascaretti/moxier-companion/edit/master/04-descriptive-statistics.Rmd",
 "text": "Edit"
 },
 "history": {
