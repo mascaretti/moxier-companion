@@ -1,21 +1,52 @@
 # Introduction {#intro}
 
-You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
+We are now going to install the tools we need. We will start from **R**, to then move to **RStudio** and, finally, the packages we are going to need.
 
-Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
+## Installing R
 
-```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center'}
-par(mar = c(4, 4, .1, .1))
-plot(pressure, type = 'b', pch = 19)
+Installing **R** has never been easier! You can simply follow the instructions you find in the video.
+
+<div style="padding:62.5% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/203516510?color=428bca&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<p><a href="https://vimeo.com/203516510">install-R</a> from <a href="https://vimeo.com/rstudioinc">RStudio, Inc.</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+
+An alternative is Microsoft R Open, which can be downloaded [here](https://mran.microsoft.com/). It lags behind the current **R** version, but it comes with better performance tweaks included.
+
+
+
+## Installing RStudio
+
+Once you have got **R** installing, simply follow this other video.
+
+<div style="padding:62.5% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/203516968?color=428bca&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<p><a href="https://vimeo.com/203516968">Install RStudio</a> from <a href="https://vimeo.com/rstudioinc">RStudio, Inc.</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+
+## Installing packages
+
+We now cover the installation of packages. Packages extend the amount of things you can do with **R**, from plotting to data analysis. We will be using the **moxier** package through this course, for instance.
+
+To quickly get up to speed as to how install packages, again, simply follow the video. Just, for the time being, skip the **tidyverse** installation.
+
+<div style="padding:62.5% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/203516241?color=428bca&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<p><a href="https://vimeo.com/203516241">install Packages</a> from <a href="https://vimeo.com/rstudioinc">RStudio, Inc.</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+
+## Installing **moxier**
+
+We are now ready to install **moxier**! First, we need to install an auxiliary package, the **remotes** package. This package allows to install other packages from GitHub. GitHub is a place where many people develop and publish open-source software.
+
+To install **remotes**, simply type in your console
+```{r eval = FALSE, echo = TRUE}
+install.packages("remotes")
 ```
 
-Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
 
-```{r nice-tab, tidy=FALSE}
-knitr::kable(
-  head(iris, 20), caption = 'Here is a nice table!',
-  booktabs = TRUE
-)
+Once the installation is complete, you can install **moxier**
+```{r eval = FALSE, echo = TRUE}
+remotes::install_github("mascaretti/moxier")
 ```
 
-You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
+
+
+Voilà! You are ready to start learning!
