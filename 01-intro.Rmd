@@ -1,5 +1,9 @@
 # Introduction {#intro}
 
+```{r include=FALSE}
+install.packages("remotes")
+remotes::install_github("mascaretti/moxier")
+```
 We are now going to install the tools we need. We will start from **R**, to then move to **RStudio** and, finally, the packages we are going to need.
 
 ## Installing R
@@ -48,5 +52,26 @@ remotes::install_github("mascaretti/moxier")
 ```
 
 
+## Using **moxier**
+
+We are now interested in using **moxier**. What is inside it? To find out, we list the tutorials contained in the package.
+
+```{r eval = TRUE, echo = FALSE}
+knitr::kable(cbind(learnr::available_tutorials(package = "moxier")$name, learnr::available_tutorials(package = "moxier")$title), col.names = c("Name", "Title"))
+```
+
+
+Now, let us imagine you wish to run the tutorial on how to install **R**.
+
+Simply run
+
+```{r eval = FALSE, echo = TRUE}
+learnr::run_tutorial(name = "00-introduction-installing-r", package = "moxier")
+```
+
+Quite smooth, right? Of course, put the title you are interested in to run the respective tutorial. To see the full list,
+```{r eval = FALSE, echo = TRUE}
+learnr::available_tutorials(package = "moxier")
+```
 
 Voilà! You are ready to start learning!

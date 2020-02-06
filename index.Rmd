@@ -15,7 +15,7 @@ description: "This is a book with the instructions to effectively run the notebo
 ```{r include=FALSE}
 # automatically create a bib database for R packages
 knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown', 'learnr'
+  .packages(), 'bookdown', 'knitr', 'rmarkdown', 'learnr', 'ggplot2'
 ), 'packages.bib')
 ```
 

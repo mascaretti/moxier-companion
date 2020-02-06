@@ -1,0 +1,8 @@
+# Introduction to programming in R
+
+This tutorial will introduce you to programming in **R**.
+Run it by doing
+```{r eval = FALSE, echo = TRUE}
+learnr::run_tutorial(name = "01-introduction-programming-r",
+                     package = "moxier")
+```

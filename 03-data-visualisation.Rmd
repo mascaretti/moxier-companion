@@ -1,0 +1,17 @@
+# Data Visualisation
+
+In this part of the course, we will dive deep into data visualisation. We will start using base **R** and then explore the package **ggplot2**, [@R-ggplot2].
+
+## Base **R**
+
+```{r eval = FALSE, echo = TRUE}
+learnr::run_tutorial(name = "02-data-visualisation-graphics",
+                     package = "moxier")
+```
+
+## **ggplot2**
+
+```{r eval = FALSE, echo = TRUE}
+learnr::run_tutorial(name = "03-data-visualisation-ggplot2",
+                     package = "moxier")
+```

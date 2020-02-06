@@ -1,0 +1,36 @@
+# Descriptive Statistics
+
+We now turn our attention to descriptive statistics.
+
+
+## Univariate Statistics
+
+### Descriptive Univariate
+
+```{r eval = FALSE, echo = TRUE}
+learnr::run_tutorial(name = "04-descriptive-statistics-univariate",
+                     package = "moxier")
+```
+
+### Depth Measures
+
+```{r eval = FALSE, echo = TRUE}
+learnr::run_tutorial(name = "05-descriptive-statistics-depth-measures",
+                     package = "moxier")
+```
+
+## Multiavriate Statistics
+
+### Descriptive Multivariate
+
+```{r eval = FALSE, echo = TRUE}
+learnr::run_tutorial(name = "06-descriptive-statistics-multivariate",
+                     package = "moxier")
+```
+
+### Curse of Dimensionality
+
+```{r eval = FALSE, echo = TRUE}
+learnr::run_tutorial(name = "07-descriptive-statistics-curse-dimensionality",
+                     package = "moxier")
+```
