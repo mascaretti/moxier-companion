@@ -78,4 +78,4 @@ Voilà! You are ready to start learning!
 
 
 ### Closing a notebook
-To close a notebook, first of all close the tab on your web browser. Then, go back to RStudio a click on the `Stop` in the console. 
+To close a notebook, first of all close the tab on your web browser. Then, go back to RStudio a click on the `Stop` in the console. The `Stop` button is the red button in your console! 
